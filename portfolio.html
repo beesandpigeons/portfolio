@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <style>
+        body {
+            font-family: font-family: 'Pacifico', cursive;
+            margin: 0;
+            padding: 0;
+            background-image: url("bg.png");
+            background-size: cover;
+        }
+
+        header {
+            color: #fff;
+            font-size: 80px;
+            text-align: center;
+            padding: 80px;
+        }
+
+        section {
+            overflow: auto;
+            max-width: 1700px;
+            margin: 2em auto;
+            padding: 30px;
+            background-color: #ffffff7d;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 0.5em;
+        }
+
+        .collapsible {
+            background-color: #d88699;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+        }
+
+        .active, .collapsible:hover {
+            background-color: #e96886;
+        }
+
+        .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Lena Kuna</h1>
+    </header>
+    <section>
+        <h2 style="text-align: left; font-size: 50px;">O mnie</h2>
+        <img src="zdj.jpg" align="left">
+        <p>Email: your.email@example.com</p>
+        <p>LinkedIn: linkedin.com/yourprofile</p>
+        <p>GitHub: github.com/yourusername</p>
+    </section>
+    <div id="projekty">
+    <section>
+            <h2>Moje projekty</h2>
+            <ul>
+                <li>
+                    <button type="button" class="collapsible">Programowanie</button>
+                        <div class="content">
+                            <h3>Analiza akcji </h3>
+                            <a href="music.rar" download>Link do plików programu</a>
+                            <h3>Odtwarzacz muzyki </h3>
+                            <h3>Chat Twitch</h3>
+                            <h3>Organizer plików</h3>
+                            <a href="file_organizer.py" download>Link do pliku programu</a>
+                            <h3>TTS</h3>
+                            <a href="texttospeach.py" download>Link do pliku programu</a>
+                        </div>
+                </li>
+                <li>
+                    <button type="button" class="collapsible">Rysunki</button>
+                        <div class="content">
+                            <img src="karlach.png" align="left"><img src="halflife.png" align="center">
+                            <p style="text-align: right; font-size: 20px;">Rysunki poniżej są inspirowane moją synestezją i tym, jak widzę muzykę, której słuchałam.</p>
+                            <img src="manam.jpg"><img src="sock.jpg">
+                        </div>
+                </li>
+                <li>
+                    <button type="button" class="collapsible">Muzyka</button>
+                        <div class="content">
+                            
+                        </div>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+        content.style.display = "none";
+        } else {
+        content.style.display = "block";
+        }
+        });
+        }
+    </script>
+</body>
+
+</html>
