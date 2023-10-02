@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>Lena Kuna - Portfolio</title>
     <style>
         body {
             font-family: 'Times New Roman', serif;
@@ -61,6 +61,9 @@
             overflow: hidden;
             background-color: #f1f1f144;
         }
+        .wprowadzenie {
+            max-width: fit-content;
+        }
     </style>
 </head>
 
@@ -68,7 +71,7 @@
     <header>
         <h1>Lena Kuna</h1>
     </header>
-    <section>
+    <section class="wprowadzenie">
         <h2 style="text-align: left; font-size: 50px;">Wprowadzenie</h2>
         <img src="zdj.jpg" align="left">
         <p style="text-align: right; max-width: 1000px;">Bardzo dziękuję za poświęcenie uwagi mojemu portoflio :). Poniżej zamieszczam przykłady moich prac, łącznie z wideo-demonstracją w razie gdyby sam kod nie działał. Nie są to wszystkie moje projekty ale moje ulubione. Jeszcze raz dziękuję za uwagę.</p>
@@ -81,12 +84,26 @@
                     <button type="button" class="collapsible">Programowanie</button>
                         <div class="content">
                             <h3>Analiza akcji </h3>
-                            <a href="music.rar" download>Link do plików programu</a>
-                            <h3>Odtwarzacz muzyki </h3>
+                                <video width="960" height="720" controls>
+                                    <source src="st.mp4" type="video/mp4">
+                                </video>
+                                <br>
+                            <a href="stocks.rar" download>Link do plików programu</a>
                             <h3>Chat Twitch</h3>
+                                <video width="960" height="720" controls>
+                                    <source src="chat.mp4" type="video/mp4">
+                                </video>
                             <h3>Organizer plików</h3>
+                                <video width="960" height="720" controls>
+                                    <source src="organ.mp4" type="video/mp4">
+                                </video>
+                                <br>
                             <a href="file_organizer.py" download>Link do pliku programu</a>
                             <h3>TTS</h3>
+                                <video width="960" height="720" controls>
+                                    <source src="tts.mp4" type="video/mp4">
+                                </video>
+                                <br>
                             <a href="texttospeach.py" download>Link do pliku programu</a>
                         </div>
                 </li>
